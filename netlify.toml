@@ -1,0 +1,10 @@
+[build]
+  # 1. Netlify will "cd" into this folder first
+  base = "demo"
+
+  # 2. Netlify will run this command INSIDE the demo folder
+  command = "npm run build"
+
+  # 3. Netlify will look for this folder relative to "demo"
+  # (So it finds demo/dist)
+  publish = "dist"
